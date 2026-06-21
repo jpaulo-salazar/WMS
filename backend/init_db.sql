@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS wms_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE wms_db;
+
+GRANT ALL PRIVILEGES ON wms_db.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;

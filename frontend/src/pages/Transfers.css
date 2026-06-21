@@ -1,0 +1,47 @@
+.transfer-type-selector {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.type-btn {
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.type-btn.active {
+    background: #e94560;
+    color: #fff;
+    border-color: #e94560;
+}
+
+.type-btn:hover {
+    border-color: #e94560;
+}
+
+.item-info {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.item-info p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.badge-bin {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
+.badge-aisle {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}

@@ -1,0 +1,87 @@
+.btn-staging {
+    background: #1565c0;
+    color: #fff;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.btn-staging:hover {
+    background: #0d47a1;
+}
+
+.btn-release {
+    background: #2e7d32;
+    color: #fff;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.btn-release:hover {
+    background: #1b5e20;
+}
+
+.btn-release-confirm {
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-release-confirm:hover {
+    background: #1b5e20;
+}
+
+.staging-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.staging-btn {
+    padding: 12px 8px;
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staging-btn:hover {
+    border-color: #e94560;
+}
+
+.staging-btn.selected {
+    background: #e94560;
+    color: #fff;
+    border-color: #e94560;
+}
+
+.staging-qty {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+.action-cell {
+    white-space: nowrap;
+}
