@@ -6,7 +6,8 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+cors_origins = os.getenv('BACKEND_CORS_ORIGINS', 'http://localhost:3000').split(',')
+CORS(app, resources={r"/api/*": {"origins": cors_origins}})
 
 from config.database import init_db
 db = init_db(app)
@@ -58,4 +59,6 @@ if __name__ == '__main__':
         else:
             print('Database already seeded.')
 
-    app.run(debug=True, port=5000)
+    host = os.getenv('FLASK_HOST', '0.0.0.0')
+port = int(os.getenv('FLASK_PORT', 5000))
+app.run(debug=True, host=host, port=port)
